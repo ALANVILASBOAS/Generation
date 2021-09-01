@@ -7,6 +7,7 @@ programa
 		 * e mostre-a expressa apenas em dias*/
 		inteiro ano,mes,dia,totaldia
 		
+		
 		 escreva("\nVamos descobrir quandos dias você viveu no total?")
 		 escreva("\nDigite aqui quantos anos você tem: ")
 		 leia(ano)
