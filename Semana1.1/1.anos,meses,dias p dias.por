@@ -1,5 +1,4 @@
-programa
-{
+d{
 	
 	funcao inicio()
 	{
