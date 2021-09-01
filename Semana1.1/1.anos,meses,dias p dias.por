@@ -1,10 +1,12 @@
-d{
+programa
+{
 	
 	funcao inicio()
 	{
 		/*Faça um sistema que leia a idade de uma pessoa expressa em anos, meses e dias
 		 * e mostre-a expressa apenas em dias*/
 		inteiro ano,mes,dia,totaldia
+		
 		
 		 escreva("\nVamos descobrir quandos dias você viveu no total?")
 		 escreva("\nDigite aqui quantos anos você tem: ")
