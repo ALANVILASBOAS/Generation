@@ -11,7 +11,7 @@ posição das matrizes N1 e N2.
 	{
 		inteiro N1[2][3],N2[2][3],M1[2][3],M2[2][3],l,c,x=0
 		
-//Obs: A quantidade de vetores foram diminuidas para 2,3 em todas as matrizes para
+//Obs: A quantidade de vetores foi diminuida para 2,3 em todas as matrizes para
 //melhor observação.
 
 //-- matriz N1------------------
@@ -64,7 +64,7 @@ para (l=0;l<2;l++)
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 378; 
+ * @POSICAO-CURSOR = 415; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
