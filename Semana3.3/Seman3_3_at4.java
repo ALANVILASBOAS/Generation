@@ -15,10 +15,7 @@ lido e o resultado da adição da constante deve ser armazenado na própria matriz.
 	public static void main(String[] args) {
 		Scanner leia = new Scanner (System.in);
 		
-		float[][] arrayUm = new float[2][2];
-		float[][] arrayDois=new float[2][2];
-		float[][] arraySoma=new float[2][2];
-		float[][] arraySub= new float[2][2];
+		float[][] arrayUm = new float[2][2],arrayDois=new float[2][2],arraySoma=new float[2][2],arraySub= new float[2][2];
 		int l,c,x,z=3;
 		
 		
