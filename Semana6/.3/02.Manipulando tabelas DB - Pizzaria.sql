@@ -1,4 +1,3 @@
-drop database db_pizzaria_legal;
 create database db_pizzaria_legal;
 use db_pizzaria_legal;
 create table tb_categoria(
@@ -36,17 +35,17 @@ insert into tb_pizza(sabor,tamanho,valor,cat_id) values ("Portuguesa",15,25.50,3
 
 select * from tb_pizza;
 
+select * from tb_pizza where valor > 45;
+
+select * from tb_pizza where valor between 29 and 60;
+
+select * from tb_pizza where sabor like "C%";
+
 select tb_pizza.sabor, tb_categoria.borda, tb_pizza.valor
 from tb_pizza inner join tb_categoria
-on tb_categoria.id=tb_pizza.cat_id
-where tb_pizza.valor > 45;
+on tb_categoria.id=tb_pizza.cat_id;
 
 select tb_pizza.sabor, tb_categoria.borda, tb_pizza.valor
 from tb_pizza inner join tb_categoria
 on tb_categoria.id=tb_pizza.cat_id
-where tb_pizza.valor between 29 and 60;
-
-select tb_pizza.sabor, tb_categoria.borda, tb_pizza.valor
-from tb_pizza inner join tb_categoria
-on tb_categoria.id=tb_pizza.cat_id
-where tb_pizza.sabor like "C%";
+where tb_categoria.tipo like "doce";

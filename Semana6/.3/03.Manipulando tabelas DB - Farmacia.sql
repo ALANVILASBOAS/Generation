@@ -37,20 +37,15 @@ insert into tb_produto(nome,quantidade_mg,tratamento,valor,p_id) values ("Bromaz
 
 select*from tb_produto;
 
-select tb_produto.nome,tb_categoria.categoria,tb_produto.valor
-from tb_produto inner join tb_categoria
-on tb_categoria.id=tb_produto.p_id
-where tb_produto.valor > 50;
+select*from tb_produto where valor > 50;
 
-select tb_produto.nome,tb_categoria.tarja,tb_produto.valor
-from tb_produto inner join tb_categoria
-on tb_categoria.id=tb_produto.p_id
-where tb_produto.valor between 3 and 60;
+select*from tb_produto where valor between 3 and 60;
+
+select*from tb_produto where nome like "B%";
 
 select tb_produto.nome,tb_categoria.tarja,tb_produto.tratamento
 from tb_produto inner join tb_categoria
-on tb_categoria.id=tb_produto.p_id
-where tb_produto.nome like "B%";
+on tb_categoria.id=tb_produto.p_id;
 
 select tb_produto.nome,tb_categoria.categoria,tb_produto.valor
 from tb_produto inner join tb_categoria

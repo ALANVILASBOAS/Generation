@@ -1,4 +1,3 @@
-drop database db_cidade_das_frutas;
 create database db_cidade_das_frutas;
 use db_cidade_das_frutas;
 
@@ -37,20 +36,15 @@ insert into tb_produto (nome,quilos,valor,cat_id) values ("beringeja",1.5,40.0,2
 
 select*from tb_produto;
 
-select tb_produto.nome, tb_categoria.tipo, tb_produto.valor
-from tb_produto inner join tb_categoria
-on tb_categoria.id=tb_produto.cat_id
-where tb_produto.valor > 50;
+select*from tb_produto where valor > 50;
+
+select*from tb_produto where valor between 3 and 60;
+
+select*from tb_produto where nome like "C%";
 
 select tb_produto.nome, tb_categoria.tipo, tb_produto.valor
 from tb_produto inner join tb_categoria
-on tb_categoria.id=tb_produto.cat_id
-where tb_produto.valor between 3 and 60;
-
-select tb_produto.nome, tb_categoria.tipo, tb_produto.valor
-from tb_produto inner join tb_categoria
-on tb_categoria.id=tb_produto.cat_id
-where tb_produto.nome like "C%";
+on tb_categoria.id=tb_produto.cat_id;
 
 select tb_produto.nome, tb_categoria.tipo, tb_produto.valor
 from tb_produto inner join tb_categoria
